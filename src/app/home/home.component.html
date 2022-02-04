@@ -1,0 +1,41 @@
+<carousel
+  [images]="imageSources"
+  [objectFit]="'cover'"
+  [cellWidth]="'100%'"
+  [height]="500"
+  [autoplay]="true"
+  [overflowCellsLimit]="1"
+  [dots]="true"
+  [loop]="true"
+></carousel>
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile>
+    <a mat-button class="feature-link" routerLink="/lost-and-found">
+      <fa-icon
+        class="main-icons"
+        [icon]="['fas', 'business-time']"
+        size="6x"
+      ></fa-icon>
+      <br />
+      <p>Lost and Found</p>
+    </a>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <a mat-button class="feature-link" routerLink="/announcement">
+      <fa-icon
+        class="main-icons"
+        [icon]="['fas', 'bullhorn']"
+        size="6x"
+      ></fa-icon>
+      <br />
+      <p>Announcements</p>
+    </a>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <a mat-button class="feature-link" routerLink="/maintenance-request">
+      <fa-icon class="main-icons" [icon]="['fas', 'tools']" size="6x"></fa-icon>
+      <br />
+      <p>Maintenance Request</p>
+    </a>
+  </mat-grid-tile>
+</mat-grid-list>
